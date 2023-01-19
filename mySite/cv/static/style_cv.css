@@ -1,0 +1,143 @@
+/* HyperionDev Task 41 - Intro to CSS */
+/* CSS Styling */
+/* Please note I've only tested this on a 1080p 16:9 monitor
+so the appearence on other sizes or resolutions may be slightly
+different */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Take away default formatting */
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+/* General Rules */
+body {
+    background-color: rgb(36, 38, 40);
+}
+
+/* Setup grid */
+main {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 22% 1fr;
+    color: rgb(173, 173, 173);
+    /* background-color: rgb(43, 43, 42); */
+    grid-gap: 2rem;
+    filter: drop-shadow(0 0 0.4rem rgb(16, 16, 17))
+}
+
+/* Remove unordered list styling */
+ul {
+    list-style: none;
+}
+
+/* Header Styling */
+h2 {
+    color: rgb(173, 173, 173);;
+}
+
+h6 {
+    font-size: 12px;
+    line-height: 2rem;
+}
+
+/* Element Styling */
+a {
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+}
+
+span {
+    word-spacing: 1rem;
+}
+
+footer {
+    /* background-color: rgb(56, 56, 65); */
+    color: rgb(173, 173, 173);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+/* Classes */
+.left {
+    background-color: rgb(56, 56, 65);
+    border-radius: 20px;
+}
+
+.left-image {
+    position: relative;
+}
+
+/* Size of image within lef-image class*/
+.left-image img {
+    width: 100%;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 0.4rem rgb(16, 16, 17))
+}
+
+/* Set h2 Header inside of .lef-image */
+.left-image h2 {
+    position: absolute;
+    bottom: 2%;
+    left: 22%;
+    color: white;
+    filter: drop-shadow(0 0 0.4rem rgb(16, 16, 17));
+    font-size: 23px;
+}
+
+.profile {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+}
+
+.profile img {
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.6rem rgb(16, 16, 17))
+}
+
+.fa-solid,
+.fa-brands {
+    color: white;
+    padding-right: 8px;
+}
+
+/* Padding for left side classes */
+.personal,
+.skills,
+.prog-languages,
+.software {
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+.experience, .education, .projects {
+    background-color: rgb(56, 56, 65);
+    line-height: 1.6;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.projects ul {
+    line-height: 2rem;
+}
+
+.projects {
+    padding-bottom: 9rem;
+}
+
+.projects li:hover,
+.personal strong:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
